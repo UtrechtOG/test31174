@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Private Area</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Private Website</h1>
+    <p class="subtitle">Authorized access only</p>
+
+    <div class="login-box">
+      <input type="password" id="password" placeholder="Enter password">
+      <button onclick="checkPassword()">Login</button>
+      <p id="message"></p>
+    </div>
+
+    <div id="private-content" class="hidden">
+      <h2>Welcome</h2>
+      <p>This is a private area containing confidential information.</p>
+      <p>If you are seeing this, authentication was successful.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
